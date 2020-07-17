@@ -23,12 +23,12 @@ h1 {
 	border: 4px double white;
 }
 
-img[src="images\\writing-1043622__340.webp"] {
+img[src="images/writing-1043622__340.webp"] {
 	width: 50%;
 	margin: 0px 20% 0px 20%;
 }
 
-img[src="images\\bridge-1656035__340.webp"] {
+img[src="images/bridge-1656035__340.webp"] {
 	min-width: 50px;
  	width: 100%;
  }
@@ -60,7 +60,7 @@ img[src="images\\bridge-1656035__340.webp"] {
 div#section1 {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-image: url('images\\greyBanner.jpg');
+	background-image: url('images/greyBanner.jpg');
 	background-repeat: repeat;
 	background-size: 100%;
 	background-position: center;
@@ -191,7 +191,7 @@ table#form1 td select:hover, table#form1 td button:hover, table#form1 td input:h
 div#section2 {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-image: url("images\\greyBanner2.jpg");
+	background-image: url("images/greyBanner2.jpg");
 	background-repeat: repeat;
 	background-size: 100%;
 	margin: auto;
@@ -202,7 +202,7 @@ div.eitherSide {
 	display: flex;
 }
 
-img[src="images\\flower-drawing-transparent-background-25.png"] {
+img[src="images/flower-drawing-transparent-background-25.png"] {
 	margin: 5% 10%;
 	width: 10%;
 	height: 10%;
