@@ -59,7 +59,7 @@ img[src="images/bridge-1656035__340.webp"] {
 
 div#section1 {
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 150px;
 	background-image: url('images/greyBanner.jpg');
 	background-repeat: repeat;
 	background-size: 100%;
@@ -202,7 +202,13 @@ div.eitherSide {
 	display: flex;
 }
 
-img[src="images/flower-drawing-transparent-background-25.png"] {
+img[src="images/kindpng_5043236.png"] {
+	margin: 5% 10%;
+	width: 10%;
+	height: 10%;
+}
+
+img[src="images/letter-transparent-21.png"] {
 	margin: 5% 10%;
 	width: 10%;
 	height: 10%;
