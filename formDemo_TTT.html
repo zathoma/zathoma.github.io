@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+
+	<link rel="stylesheet" type="text/css" href="formDemo.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="section1">
+	<h1>A <strong>Lovely</strong> Little Form</h1>
+	<div class="curvedBorderWithShadow">
+		<div class="tableHeadAndFoot">
+				<hr>
+		</div>
+		<div id="scrollBarWrapper">
+			<table id="form1">
+				<tbody>
+					<form id="f1" style="none">
+						<colgroup>
+							<col class="labels">
+							<col span="2" class="inputgroup2">
+							<col span="2" class="inputgroup1">
+							<col class="RBorder">
+						</colgroup>
+						<tr>
+							<th></th>
+							<th scope="col">Comments on service</th>
+							<th scope="col">Reason for calling</th>
+							<th scope="col">Name</th>
+							<th scope="col">Submit</th>
+							<th rowspan="4"></th>
+						</tr>
+						<tr id="form_row1">
+							<td>
+								<label for="form_row1">RowHead <strong>1<strong>: </label>
+							</td>
+							<td class="textarea" rowspan="2">
+						 		<textarea form="f1" name="textarea1"></textarea>
+							</td>
+							<td class="select">
+								<select name="selectR1">
+									<option value="option1">Some BIG Text</option>
+									<option value="option2">More bigger text</option>
+									<option value="option3">Whaaaaaat?</option>
+								</select>
+							</td>
+							<td>
+								<input name="username" type="text" placeholder="username">
+							</td>
+							<td>
+								<input type="number" name="num1">
+								<!-- <button form="f1" name="boogers">Boogers!</button> -->
+							</td>		
+						</tr>
+						<tr id="form_row2">
+							<td> 
+								<label for="form_row2" >RowHead <strong>2<strong>: </label>
+							</td>
+							<!-- <td class="textarea">
+								<textarea form="f1" name="textarea2"></textarea>
+							</td> -->
+							<td class="select">
+								<button>This is a Button</button>
+							</td>
+							</td>
+							<td>
+								<input name="password" type="password" placeholder="password">
+							</td>
+							<td>
+								<input type="submit">
+							</td>	
+						</tr>	
+					</form>
+					<tr>
+						<td></td>
+						<td colspan="2">
+							<img src="writing-1043622__340.webp">
+						</td>
+						<td colspan="2">
+							<img src="bridge-1656035__340.webp">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="tableHeadAndFoot">
+			<hr>
+		</div>
+	</div>
+</div>
+<hr class="sectiondivision">
+<div id="section2">
+	<h1>Tic Tac Toe 2</h1>
+	<div class="eitherSide">
+		<img src="flower-drawing-transparent-background-25.png">
+		<div id="tictactoeback">
+			<table id="tictactoetable">
+				<colgroup>
+					<col class="left">
+					<col class ="center">
+					<col class ="right">
+				</colgroup>
+				<form>
+					<tr class="top">
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr class="middle">
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr class="bottom"> <!-- unused -->
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option class="unselected"></option>
+								<option class="X">X</option>
+								<option class="O">O</option>
+							</select>
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+		<img src="flower-drawing-transparent-background-25.png">
+	</div>
+</div>
+
+</body>
+</html>
