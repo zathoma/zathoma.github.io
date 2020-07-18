@@ -131,6 +131,7 @@ table#form1 th {
 }
 
 table#form1 td.textarea{
+	height: 100%;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -160,9 +161,11 @@ table#form1 td button, table#form1 td input[type="submit"]{
 }
 
 table#form1 td textarea {
+	box-sizing: border-box;
+	border: none;
 	font-weight: bold;
-	height: 87px;
-	max-width: 398px;
+	height: 108px;
+	min-height: 104px;
 	min-width: 200px;
 	padding: 0px;
 	margin: 0px;
