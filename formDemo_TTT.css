@@ -259,7 +259,7 @@ div#section2 td select {
 	padding-left: 15%;
 	font-size: 800%;
 	overflow: hidden;
-	border-style: none;
+	border-style: none; border-style /*none required for fire-fox (default styling inbuilt)*/
 	text-align: center;
 	-moz-text-align: center;
 }
