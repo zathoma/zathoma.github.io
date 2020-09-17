@@ -210,6 +210,7 @@ const addItemMenus = function() {
 			}, 3000);
 		}
 		textArea.value = "";
+		window.scrollTo(0, 0);
 	}
 
 	let getDate = function() {
@@ -222,6 +223,7 @@ const addItemMenus = function() {
 		} else {
 			instructions.innerHTML = "Invalid date format, please try again...";
 		}
+		window.scrollTo(0, 0);
 	}
 
 	let getDescription = function() {
@@ -243,6 +245,7 @@ const addItemMenus = function() {
 			cancelButton.classList.toggle("hidden");
 			document.getElementById("new-item-button").classList.toggle("hidden");
 		}, 3000);
+		window.scrollTo(0, 0);
 	}
 
 	let cancelAdd = function() {
@@ -253,6 +256,7 @@ const addItemMenus = function() {
 		textArea.value = "";
 		document.getElementById("dialogue-pane-container").classList.toggle("hidden");
 		document.getElementById("new-item-button").classList.toggle("hidden");
+		window.scrollTo(0, 0);
 	}
 
 	instructions.innerHTML = "Enter your todo item's title...";
