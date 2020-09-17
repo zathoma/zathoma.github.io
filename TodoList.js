@@ -289,6 +289,8 @@ const borderAdjust = function() {
 		listDisplay.classList.remove("pane-border-top");
 		listDisplay.classList.add("pane-border-left");
 	}
+
+	listDisplay.style.minHeight = (Number(window.innerHeight) - 40) + "px";
 }
 
 window.onresize = borderAdjust;
@@ -299,5 +301,4 @@ if (window.innerWidth <= 992) {
 	document.getElementById("list-display").classList.add("pane-border-left");
 }
 
-document.getElementById("list-display").style.height = (window.innerHeight - 40) + "px";
-// document.getElementById("list-display").style.height = "800px";
+document.getElementById("list-display").style.minHeight = (Number(window.innerHeight) - 40) + "px";
