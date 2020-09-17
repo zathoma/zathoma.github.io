@@ -282,7 +282,7 @@ const removeItemMenus = function() {
 
 const borderAdjust = function() {
 	listDisplay = document.getElementById("list-display");
-	if (window.innerWidth <= 768) {
+	if (window.innerWidth <= 992) {
 		listDisplay.classList.remove("pane-border-left");
 		listDisplay.classList.add("pane-border-top");
 	} else if (listDisplay.classList.contains("pane-border-top")) {
@@ -293,7 +293,7 @@ const borderAdjust = function() {
 
 window.onresize = borderAdjust;
 
-if (window.inerWidth <= 768) {
+if (window.inerWidth <= 992) {
 	document.getElementById("list-display").classList.add("pane-border-top");
 } else {
 	document.getElementById("list-display").classList.add("pane-border-left");
