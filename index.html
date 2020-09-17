@@ -1,186 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form Demo</title>
-
-	<link rel="stylesheet" type="text/css" href="formDemo_TTT.css">
-
-	<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap" rel="stylesheet">
+	<title>Todo List</title>
+	<link rel="stylesheet" type="text/css" href="TodoList.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="ddMenu_withColortoggle.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
 </head>
 <body>
-
-<div id="section1">
-	<h1>A <strong>Lovely</strong> Little Form</h1>
-	<div class="curvedBorderWithShadow">
-		<div class="tableHeadAndFoot">
-				<hr>
-		</div>
-		<div id="scrollBarWrapper">
-			<table id="form1">
-				<tbody>
-					<form id="f1" style="none">
-						<colgroup>
-							<col class="labels">
-							<col span="2" class="inputgroup2">
-							<col span="2" class="inputgroup1">
-							<col class="RBorder">
-						</colgroup>
-						<tr>
-							<th></th>
-							<th scope="col">Comments on service</th>
-							<th scope="col">Reason for calling</th>
-							<th scope="col">Name</th>
-							<th scope="col">Submit</th>
-							<th rowspan="4"></th>
-						</tr>
-						<tr id="form_row1">
-							<td>
-								<label for="form_row1">RowHead <strong>1<strong>: </label>
-							</td>
-							<td class="textarea" rowspan="2">
-						 		<textarea form="f1" name="textarea1" placeholder="Write your life story here..."></textarea>
-							</td>
-							<td class="select">
-								<select name="selectR1">
-									<option value="option1">Some BIG Text</option>
-									<option value="option2">More bigger text</option>
-									<option value="option3">Whaaaaaat?</option>
-								</select>
-							</td>
-							<td>
-								<input name="username" type="text" placeholder="username">
-							</td>
-							<td>
-								<input type="number" name="num1">
-								<!-- <button form="f1" name="boogers">Boogers!</button> -->
-							</td>		
-						</tr>
-						<tr id="form_row2">
-							<td> 
-								<label for="form_row2" >RowHead <strong>2<strong>: </label>
-							</td>
-							<!-- <td class="textarea">
-								<textarea form="f1" name="textarea2"></textarea>
-							</td> -->
-							<td class="select">
-								<button>This is a Button</button>
-							</td>
-							</td>
-							<td>
-								<input name="password" type="password" placeholder="password">
-							</td>
-							<td>
-								<input type="submit">
-							</td>	
-						</tr>	
-					</form>
-					<tr>
-						<td></td>
-						<td colspan="2">
-							<img src="images/writing-1043622__340.webp">
-						</td>
-						<td colspan="2">
-							<img src="images/bridge-1656035__340.webp">
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="tableHeadAndFoot">
-			<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 todo-list-body">
+				<div class="row">
+					<div class="col-sm-4 actions-menu">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Todo List</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<button id="new-item-button" type="button" class="btn btn-success text-center">Add New Item</button>
+							</div>		
+						</div>
+						<div class="row">
+							<div id="dialogue-pane-container" class="col-sm-12 hidden">
+								<h1 id="dialogue-pane-instructions">Enter the title of your new item below</h1>
+								<textarea type="text" id="dialogue-pane-textarea"></textarea>
+								<div class = row>
+									<div class="col-xs-9">
+										<button id="dialogue-pane-enter-button" type="button" class="btn btn-info text-center">Enter</button>
+									</div>
+									<div class="col-xs-3">
+										<button id="dialogue-pane-cancel-button" type="button" class="btn btn-danger text-center">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="list-display" class="col-sm-8">
+					<div class="row" id="todoItem_0"><div class="col-sm-12"><div class="ddMenu-container color-primary" id="a|-|1-1-1|-|todoItem_0"><div class="row"><div class="col-xs-10"><span class=" todo-item-title-container" parentblockid="a|-|1-1-1|-|todoItem_0"><span closed-text="" opened-text="">a <hr class="todo-item-divider"> due on:  1-1-1</span></span></div><div class="col-xs-2"><span class="right-align-inline-1"><span class="glyphicon glyphicon-trash delete-item-button" parentblockid="a|-|1-1-1|-|todoItem_0"></span></span><span class="right-align-inline-2"><div class="strikethrough-button" parentblockid="a|-|1-1-1|-|todoItem_0"><img src="Icons\strikethrough.png"></div></span><span class="right-align-inline-3"><div class="colorToggleCube color-secondary color-secondary-solid" parentblockid="a|-|1-1-1|-|todoItem_0"></div></span></div></div><div class="row"><div class="col-xs-12"><ul class="ddMenu hidden" id="description_todoItem_0"><li></li></ul></div></div></div></div></div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="sectiondivision">
-<div id="section2">
-	<h1>Tic Tac Toe 2</h1>
-	<div class="eitherSide">
-		<img src="images/kindpng_5043236.png">
-		<div id="tictactoeback">
-			<table id="tictactoetable">
-				<colgroup>
-					<col class="left">
-					<col class ="center">
-					<col class ="right">
-				</colgroup>
-				<form>
-					<tr class="top">
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-					</tr>
+	
 
-					<tr class="middle">
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-					</tr>
-
-					<tr class="bottom"> <!-- unused -->
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-						<td>
-							<select>
-								<option class="unselected"></option>
-								<option class="X">X</option>
-								<option class="O">O</option>
-							</select>
-						</td>
-					</tr>
-				</form>
-			</table>
-		</div>
-		<img src="images/letter-transparent-21.png">
-	</div>
-</div>
-
+	<script type="text/javascript" src="TodoList.js"></script>
+	<script type="text/javascript" src="ddMenu_withColorToggle.js"></script>
 </body>
 </html>
