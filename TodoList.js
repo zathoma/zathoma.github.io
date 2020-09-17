@@ -293,7 +293,7 @@ const borderAdjust = function() {
 
 window.onresize = borderAdjust;
 
-if (window.inerWidth <= 992) {
+if (window.innerWidth <= 992) {
 	document.getElementById("list-display").classList.add("pane-border-top");
 } else {
 	document.getElementById("list-display").classList.add("pane-border-left");
