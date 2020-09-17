@@ -86,6 +86,8 @@ body {
 }
 
 .delete-item-button {
+	width: 15px;
+	height: 15px;
 	cursor: pointer;
 }
 
@@ -120,6 +122,11 @@ img[src="Icons\\carrat_1.png"] {
 }
 
 img[src="Icons\\strikethrough.png"] {
+	width: 100%;
+	margin-bottom: 14px;
+}
+
+img[src="Icons\\delete.png"] {
 	width: 100%;
 	margin-bottom: 14px;
 }
