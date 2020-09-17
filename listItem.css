@@ -100,13 +100,13 @@ body {
 .right-align-inline-2 {
 	display: inline;
 	position: absolute;
-	left: 5px;
+	left: -25px;
 }
 
 .right-align-inline-3 {
 	display: inline;
 	position: absolute;
-	left: -20px;
+	left: -80px;
 }
 
 .list-item-controll-row {
