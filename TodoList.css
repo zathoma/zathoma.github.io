@@ -3,8 +3,17 @@
 	min-height: 800px;
 }
 
+.todo-item-title-container {
+	font-size: 1.3em;
+}
+
+.todo-item-description {
+	font-size: 1.2em;
+}
+
 .actions-menu {
 	padding-bottom: 18px;
+	font-size: 1em;
 }
 
 .actions-menu li {
@@ -15,9 +24,11 @@
 	text-align: center;
 	margin: auto;
 	width: 100%;
+	font-size: 1.3em;
 }
 
 .actions-menu h1 {
+	font-size: 2.5em;
 	text-align: center;
 }
 
@@ -45,6 +56,7 @@
 }
 
 #dialogue-pane-textarea {
+	font-size: 1.3em;
 	width: 100%;
 	max-width: 100%;
 	min-width: 100%;

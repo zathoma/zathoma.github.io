@@ -28,7 +28,7 @@ const abstractTodoItem = "" +
 			+"<div class='row'>"
 				+"<div class='col-xs-12'>"
 					+"<ul class='ddMenu hidden' id='description_var4'>"
-						+"<li>var3</li>"
+						+"<li class='todo-item-description'>var3</li>"
 					+"</ul>"
 				+"</div>"
 			+"</div>"	
@@ -200,13 +200,13 @@ const addItemMenus = function() {
 	let getTitle = function() {
 		title = textArea.value;
 		if (title !== "") {
-			instructions.textContent = "Enter a due date for \"" + title + "\"";
+			instructions.innerHTML = "Enter a due date for <hr class='todo-item-divider'>\"" + title + "\"";
 			enterButton.addEventListener("click", getDate, true);
 			enterButton.removeEventListener("click", getTitle, true);
 		} else {
-			instructions.textContent = "Title cannot be blank";
+			instructions.innerHTML = "Title cannot be blank";
 			setTimeout(function() {
-				instructions.textContent = "Enter your todo item's title...";
+				instructions.innerHTML = "Enter your todo item's title...";
 			}, 3000);
 		}
 		textArea.value = "";
@@ -216,18 +216,18 @@ const addItemMenus = function() {
 		date = textArea.value;
 		textArea.value = "";
 		if (todoList.dateValidation(date)) {
-			instructions.textContent = "Enter a description for \"" + title + "\"";
+			instructions.innerHTML = "Enter a description for <hr class='todo-item-divider'>\"" + title + "\"";
 			enterButton.addEventListener("click", getDescription, true);
 			enterButton.removeEventListener("click", getDate, true);
 		} else {
-			instructions.textContent = "Invalid date format, please try again...";
+			instructions.innerHTML = "Invalid date format, please try again...";
 		}
 	}
 
 	let getDescription = function() {
 		description = textArea.value;
 		textArea.value = "";
-		instructions.textContent = "Succesfully added \"" + title + "\"";
+		instructions.innerHTML = "Succesfully added <hr class='todo-item-divider'>\"" + title + "\"";
 		textArea.classList.toggle("hidden");
 		enterButton.classList.toggle("hidden");
 		cancelButton.classList.toggle("hidden");
@@ -255,7 +255,7 @@ const addItemMenus = function() {
 		document.getElementById("new-item-button").classList.toggle("hidden");
 	}
 
-	instructions.textContent = "Enter your todo item's title...";
+	instructions.innerHTML = "Enter your todo item's title...";
 	cancelButton.addEventListener("click", cancelAdd, true);
 	enterButton.addEventListener("click", getTitle, true);
 	document.getElementById("dialogue-pane-container").classList.toggle("hidden");
@@ -298,3 +298,6 @@ if (window.innerWidth <= 992) {
 } else {
 	document.getElementById("list-display").classList.add("pane-border-left");
 }
+
+document.getElementById("list-display").style.height = (window.innerHeight - 40) + "px";
+// document.getElementById("list-display").style.height = "800px";
